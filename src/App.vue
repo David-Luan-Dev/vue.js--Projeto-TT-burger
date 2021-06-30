@@ -1,28 +1,59 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   
+    <Header />
+    <img src="./img/logo_TT_transp.png" alt="" id="logo-tt">
+    <h1>Acompamento de Vendas</h1>
+    <div class="acompamento">
+      <ul>
+        <li>primeiro item</li>
+        <li>segundo item</li>
+        <li>terceiro item</li>
+      </ul>
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import './assets/styles/globa.css';
+
+import Header from './components/Header';
+
+import './fonts/Brothers Regular.otf'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+#logo-tt{
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+h1{
+  font-family: Brothers;
+  text-align: center;
+ 
+}
+ul {
+  color: aliceblue;
+  display: inline;
+   text-align: center;
+   display: grid;
+   grid-template-columns: auto;
+  
+}
+div .acompamento{
+background-color: black;
+}
+
+
 </style>
